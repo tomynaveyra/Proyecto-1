@@ -13,33 +13,25 @@
 <body id="body">
 
     <header id="header">
-        <div>
-            <img src="./img/RITUAL LOGO 2.png" width="400px" height="400px" alt="">
-        </div>
-
-        <nav class="navegacion">
-            <ul id="botoneraHeader">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./secciones/productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="./secciones/historia.html">Historia</a>
-                </li>
-                <li>
-                    <a href="./secciones/noticias.html">Noticias</a>
-                </li>
-                <li>
-                    <a href="./secciones/contacto.html">Contacto</a>
-                </li>
-
-
-
-
-            </ul>
-        </nav>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navegacion">
+            <div class="container-fluid" id="botoneraHeader">
+              <a class="navbar-brand" href="./index.html">
+                <img src="./img/RITUAL LOGO 2.png" width="200px" height="200px" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="./secciones/productos.html">Productos</a>
+                  <a class="nav-link active" href="./secciones/noticias.html">Noticias</a>
+                  <a class="nav-link active" href="./secciones/historia.html">Historia</a>
+                  <a class="nav-link active" href="./secciones/contacto.html">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </nav>
 
 
     </header>
