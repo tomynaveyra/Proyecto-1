@@ -21,37 +21,8 @@ html {
         "footer";
 }
 
-#header {
-    width: 100%;
-    grid-area: header;
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    
-    background: url(../img/fondo\ logo.png);
-    background-size: cover;
-    font-family: $font;
 
-    a {
-        text-decoration: none;
-    }
-}
 
-#main {
-    width: 100%;
-    grid-area: main;
-    background-color: #eed3b6;
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
 
-}
 
-#footer {
-    width: 100%;
-    grid-area: footer;
-    background-color: rgb(226, 208, 182);
-    text-align: center;
-    
-}
+
