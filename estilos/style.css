@@ -5,11 +5,24 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  padding-top: 60px;
+}
+
+p {
+  text-align: center;
 }
 
 #body {
@@ -35,23 +48,6 @@ html {
   text-decoration: none;
 }
 
-#main {
-  width: 100%;
-  grid-area: main;
-  background-color: #eed3b6;
-  background-size: cover;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-#footer {
-  width: 100%;
-  grid-area: footer;
-  background-color: rgb(226, 208, 182);
-  text-align: center;
-}
-
 #botoneraHeader {
   display: flex;
   flex-direction: row;
@@ -63,98 +59,56 @@ html {
   gap: 50px;
 }
 
-.hero {
+#main {
+  width: 100%;
+  grid-area: main;
+  background-color: #eed3b6;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#main .hero {
   width: 100%;
   display: flex;
   justify-content: center;
-  font-family: "Amatic SC";
   background-color: #eed3b6;
   background: url(../img/libro\,\ saumerio\ y\ velas.jpeg);
   background-size: cover;
   height: 100vh;
 }
-
-#galeria {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "glry1 glry2 glry3" "glry4 glry5 glry6";
-  gap: 5px;
-}
-#galeria img {
-  width: 98%;
-  height: 90%;
-  box-shadow: 0px 0px 10px;
-  border-radius: 10px;
-}
-
-#prodt {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
-.imgProductos img {
-  width: 45%;
-  height: 30%;
-  box-shadow: 0px 0px 10px;
-  border-radius: 10px;
-}
-
-#botoneraFooter {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  font-family: "Amatic SC";
-  font-weight: inherit;
-  font-size: 32px;
-  gap: 50px;
-}
-
-#piedepagina {
-  text-align: center;
-  color: rgb(45, 66, 24);
-  font-weight: lighter;
-  font-size: larger;
-  font-family: "Righteous";
-}
-
-.subtitulos {
-  color: rgb(182, 92, 92);
-  font-weight: bolder;
-  font-size: 30px;
-}
-
-p {
-  text-align: center;
-  font-size: 20px;
-  font-family: "Cinzel", serif;
-  color: rgb(177, 88, 177);
-}
-
-h1 {
-  padding-top: 60px;
-  color: rgb(104, 74, 74);
-  font-size: 120px;
-  font-weight: lighter;
-}
-
-h2 {
-  color: rgb(64, 99, 87);
-  font-family: "Amatic SC";
-  font-weight: inherit;
-  font-size: 60px;
-}
-
-.titulomenor {
+#main .titulomenor {
   color: rgb(214, 122, 91);
   font-family: "Amatic SC";
   font-weight: inherit;
   font-size: 70px;
   padding-left: 0px;
 }
-
-.button {
+#main #galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "glry1 glry2 glry3" "glry4 glry5 glry6";
+  gap: 5px;
+}
+#main #galeria img {
+  width: 98%;
+  height: 90%;
+  box-shadow: 0px 0px 10px;
+  border-radius: 10px;
+}
+#main .productos #prodt {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#main .productos #prodt img {
+  width: 45%;
+  height: 30%;
+  box-shadow: 0px 0px 10px;
+  border-radius: 10px;
+}
+#main .button {
   margin-top: 10px;
   margin-bottom: 20px;
   margin-left: 50%;
@@ -167,10 +121,22 @@ h2 {
   font-family: "Amatic SC";
   font-size: 20px;
 }
-.button:hover {
+#main .button:hover {
   transform: scale(1.5);
   transition-property: all;
   transition-duration: 1s;
+}
+
+footer {
+  height: 80px;
+  background-color: rgb(226, 208, 182);
+  color: rgb(45, 66, 24);
+  font-weight: lighter;
+  font-size: larger;
+  font-family: "Righteous";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Tamaño movil*/

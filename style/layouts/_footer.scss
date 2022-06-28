@@ -1,0 +1,17 @@
+@import "../variables";
+@import "../utilities/mixin";
+
+
+
+
+footer{
+    height: 80px;
+    background-color: $secundary-color;
+    color: rgb(45, 66, 24);
+    font-weight: lighter;
+    font-size: larger;
+    font-family: 'Righteous';
+    @include center-content();
+}
+
+

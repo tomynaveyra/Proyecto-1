@@ -1,0 +1,30 @@
+#header {
+    width: 100%;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    
+    background: url(../img/fondo\ logo.png);
+    background-size: cover;
+    font-family: $font;
+
+    a {
+        text-decoration: none;
+    }
+
+    
+}
+
+#botoneraHeader {    
+    
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    list-style-type: none;
+    font-family: $font;
+    font-weight: inherit;
+    font-size: 48px;
+    gap: 50px;
+    
+}    

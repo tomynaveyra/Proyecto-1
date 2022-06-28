@@ -1,0 +1,81 @@
+#main {
+    width: 100%;
+    grid-area: main;
+    background-color: #eed3b6;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .hero {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #eed3b6;
+        background: url(../img/libro\,\ saumerio\ y\ velas.jpeg );
+        background-size: cover;
+        height: 100vh;
+
+    }
+    .titulomenor {
+        color: rgb(214, 122, 91);
+        font-family: $font;
+        font-weight: inherit;
+        font-size: 70px;
+        padding-left: 0px;
+    }    
+
+    #galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "glry1 glry2 glry3"
+                             "glry4 glry5 glry6";
+        gap: 5px;  
+                           
+        img{
+
+            width: 98%;
+            height: 90%;
+            box-shadow: 0px 0px 10px;
+            border-radius: 10px;
+           
+       }                     
+    }
+
+    .productos {
+        #prodt{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            
+            img{ 
+                width: 45%;
+                height: 30%;
+                box-shadow: 0px 0px 10px;
+                border-radius: 10px;
+           }
+        }
+    }
+    
+    .button {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 50%;
+        padding: 11px;
+        border-radius: 15px;
+        border: 0.5px solid rgb(177, 88, 177);
+        background-color: transparent;
+        color: rgb(177, 88, 177);
+        cursor: pointer;
+        font-family: $font;
+        font-size: 20px;
+        
+        &:hover{
+            transform: scale(1.5);
+            transition-property: all;
+            transition-duration: 1s;
+        }
+    }
+    
+}
