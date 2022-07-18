@@ -14,10 +14,30 @@ a {
 
 h1 {
     padding-top: 60px;
+    font-family: $font;
+    font-size: 160px;
+    color: rgb(78, 35, 41);
+}
+
+h2{
+    padding-top: 60px;
+    font-family: $font;
+    font-size: 90px;
+    color: rgb(78, 96, 86);
+}
+
+h3{
+    padding-top: 40px;
+    font-family: $font;
+    font-size: 45px;
+    color: rgb(85, 63, 63); 
 }
 
 p {
     text-align: center;  
+    font-family: $font;
+    font-size: 30px;
+    color: rgb(90, 49, 129);
 }
 
 

@@ -9,9 +9,12 @@ footer{
     background-color: $secundary-color;
     color: rgb(45, 66, 24);
     font-weight: lighter;
-    font-size: larger;
+    font-size: 30px;
     font-family: 'Righteous';
     @include center-content();
+    .footer__cont{
+        padding: 10px;
+    }
 }
 
 
